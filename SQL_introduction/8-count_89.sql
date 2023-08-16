@@ -1,3 +1,4 @@
---count 
-SELECT COUNT(id)
-FROM first_table;
+-- Count 
+SELECT COUNT(*)
+FROM first_table
+WHERE id=89;

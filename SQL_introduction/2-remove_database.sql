@@ -1,2 +1,2 @@
---Deleting database named hbtn_0c_0
-DROP SCHEMA hbtn_0c_0;
+-- Deleting database named hbtn_0c_0 if exists
+DROP SCHEMA IF EXISTS hbtn_0c_0;
