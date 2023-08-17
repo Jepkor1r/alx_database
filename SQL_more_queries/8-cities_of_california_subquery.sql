@@ -1,5 +1,9 @@
 -- listing all cities of California in db htbn_0d_usa
-DESCRIBE DATABASE hbtn_0d_usa;
-INSERT INTO states(name)
-VALUES(California)
+SELECT cities.id, cities.name
+FROM cities
+WHERE state_id = (
+    SELECT id
+    FROM states
+    WHERE name = 'California'
+)
 ORDER BY cities.id ASC;
