@@ -1,4 +1,3 @@
---creating user
+--creating user and granting the user all priviledges to the server
 CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY user_0d_1_pwd;
---granting the user all priviledges to the server
 GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
