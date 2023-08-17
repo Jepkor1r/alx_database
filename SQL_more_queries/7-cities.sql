@@ -1,5 +1,8 @@
-CREATE SCHEMA hbtn_0d_usa
-CREATE TABLE cities(
-id INT UNIQUE AUTO NOT NULL PRIMARY KEY,
+-- Creating a database named hbtn_0d_usa
+CREATE SCHEMA IF NOT EXISTS hbtn_0d_usa
+USE hbtn_0d_usa
+-- Creating a table named cities
+CREATE TABLE IF NOT EXISTS cities(
+id INT UNIQUE AUTO_INCREMENT NOT NULL PRIMARY KEY,
 state_id INT NOT NULL FOREIGN KEY(state_id) REFERENCES states(id)
 name VARCHAR(256));
